@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+     <div class="inicio">
+         <img src="imagens/ifal_img.png" alt="ifal">
+         <h1 id="titulo">Inscrição no estágio</h1>
+         <br>
+     </div>  
+    
+    <form>
+        <div class="container">
+             <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" id="nome" name="nome" required minlength="2" maxlength="50">
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="tel" id="telefone" name="telefone" required minlength="11">
+                </div>
+
+                <div class="campo">
+                    <label for="area"><strong>Área de Interesse:</strong></label>
+                    <select id="area" name="area">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="design">Web Design</option>
+                        <option value="dados">Ciência de dados</option>
+                        <option value="segurança">Segurança da informação</option>
+                        <option value="dev">Dev Web</option>
+                        <option value="programador">Programador</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label><strong>Gênero:</strong></label>
+                    <div class="gender-options">
+                        <input type="radio" id="genero-m" name="genero" value="masculino">
+                        <label for="genero-m">Masculino</label>
+                        <input type="radio" id="genero-f" name="genero" value="feminino">
+                        <label for="genero-f">Feminino</label>
+                        <input type="radio" id="genero-o" name="genero" value="outro">
+                        <label for="genero-o">Outro</label>
+                    </div>
+                    
+                </div>
+
+                <fieldset class="grupo">
+                    <div id="check">
+                        <label><strong>Skills:</strong></label><br><br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                        <label for="tecnologia1">HTML</label>
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                        <label for="tecnologia2">CSS</label>
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                        <label for="tecnologia3">JavaScript</label>
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="BootStrap">
+                        <label for="tecnologia4">BootStrap</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <label for="comentario"><strong>Comentário:</strong></label>
+                    <textarea id="comentario" name="comentario"></textarea>
+             </div>
+                
+            <button class="botao" type="submit">Enviar Inscrição</button>
+        </div>
+              
+    </form>
+</body>
+</html>
