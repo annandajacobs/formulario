@@ -32,7 +32,7 @@
 
                 <div class="campo">
                     <label for="area"><strong>Área de Interesse:</strong></label>
-                    <select id="area" name="area">
+                    <select id="area" name="area" required>
                         <option selected disabled value="">Selecione</option>
                         <option value="design">Web Design</option>
                         <option value="dados">Ciência de dados</option>
@@ -45,7 +45,7 @@
                 <div class="campo">
                     <label><strong>Gênero:</strong></label>
                     <div class="gender-options">
-                        <input type="radio" id="genero-m" name="genero" value="masculino">
+                        <input type="radio" id="genero-m" name="genero" value="masculino" required>
                         <label for="genero-m">Masculino</label>
                         <input type="radio" id="genero-f" name="genero" value="feminino">
                         <label for="genero-f">Feminino</label>
@@ -58,7 +58,7 @@
                 <fieldset class="grupo">
                     <div id="check">
                         <label><strong>Skills:</strong></label><br><br>
-                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML" required>
                         <label for="tecnologia1">HTML</label>
                         <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
                         <label for="tecnologia2">CSS</label>
@@ -72,9 +72,9 @@
                 <div class="campo">
                     <br>
                     <label for="comentario"><strong>Comentário:</strong></label>
-                    <textarea id="comentario" name="comentario"></textarea>
+                    <textarea id="comentario" name="comentario" required></textarea>
              </div>
-                
+    
             <button class="botao" type="submit">Enviar Inscrição</button>
         </div>
               
